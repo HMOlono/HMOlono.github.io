@@ -1,9 +1,37 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5.3 Sidebar Layout</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 <body>
-  <h1>HMOlono</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
 
+  <!-- Toggle Button (right side on mobile) -->
+  <button class="btn btn-outline-light bg-dark toggle-btn" id="toggleSidebar">
+    ☰
+  </button>
+
+  <!-- Sidebar -->
+  <div class="sidebar bg-dark text-white" id="sidebar">
+    <h5 class="px-3">Menu</h5>
+    <a href="#">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="mainContent">
+    <h1>Fixed Sidebar Layout</h1>
+    <p>This layout uses a fixed sidebar and a right-aligned toggle button on mobile.</p>
+    <p>Resize your screen to see the responsive behavior.</p>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
