@@ -114,6 +114,9 @@ a.icon-link svg {
     z-index: 1050;
     display: none;
 }
+.toggle-btn, .toggle-btn:active {
+    color:white;
+} 
 @media (max-width: 768px) {
     .sidebar {
     transform: translateX(-100%);
