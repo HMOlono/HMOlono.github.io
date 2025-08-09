@@ -70,6 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:15px;
 }
 #menu .iconos ul li {
     margin: 5px 5px;
@@ -83,12 +84,9 @@ a.icon-link {
     height:25px;
     width:25px;
     text-decoration: none;
-    font-size:16px;
+    font-size:14px;
     border:solid 1px gray;
-    padding:16px;
-}
-a.icon-link svg {
-    display: block;       
+    padding:14px;
 }
 .lineadivisora {
     width: 100%;
@@ -98,12 +96,23 @@ a.icon-link svg {
     margin-bottom:1.5rem;
 }
 .loslinks {
-    text-align:left;
+  display: flex;
+  flex-direction: column;
 }
 .loslinks a {
-    border-radius: 10px;
-    padding:.5rem;
-    margin-bottom:.5rem;
+  display: inline-flex;
+  align-items: center; /* vertical center icon + text */
+  gap: 6px; /* space between icon and text */
+  text-decoration: none;
+  color: inherit; /* use current text color */
+  border-radius:.5em;
+  margin-bottom:1em;
+  padding:6px 6px 6px 15px;
+}
+.loslinks a svg {
+  flex-shrink: 0;
+  width:1em;
+  height:1em;
 }
 .main-content {
     margin-left: 250px;
