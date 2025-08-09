@@ -19,6 +19,7 @@
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
+    background-color:rgb(41,41,41);
 }
 .sidebar {
     position: fixed;
@@ -37,10 +38,11 @@ body {
     text-decoration: none;
     display: block;
     padding: 0.75em 1rem;
+    transition: .5s ease;
 }
 .sidebar a:hover {
-    background-color: #495057;
-    color: #fff;
+    background-color: #5271FF;
+    color: white;
 }
 .sidebar.collapsed {
     transform: translateX(-100%);
@@ -50,15 +52,17 @@ body {
     margin-bottom:1rem;
 }
 #menu {
-    padding-top:2.5rem;
-    padding-bottom:2.5rem;
+    padding:2.5rem 1.5rem;
     color:white;
 }
-#menu h3 {
+#menu h4 {
     font-weight:bold; 
     color:white;
     padding:0;
     margin:0;
+}
+#menu h6 {
+    font-size:.8em;
 }
 #menu .iconos ul {
     list-style: none;
@@ -72,7 +76,7 @@ body {
 }
 a.icon-link {
     display: inline-flex;
-    color:#5271FF;          
+    color:#5271FF;        
     justify-content: center;       
     align-items: center;           
     border-radius: 50%;
@@ -82,10 +86,6 @@ a.icon-link {
     font-size:16px;
     border:solid 1px gray;
     padding:16px;
-}
-a.icon-link:hover {
-    background-color: #5271FF;
-    color: white;
 }
 a.icon-link svg {
     display: block;       
@@ -97,11 +97,18 @@ a.icon-link svg {
     margin-top:1.5rem;
     margin-bottom:1.5rem;
 }
+.loslinks {
+    text-align:left;
+}
+.loslinks a {
+    border-radius: 10px;
+    padding:.5rem;
+    margin-bottom:.5rem;
+}
 .main-content {
     margin-left: 250px;
     padding: 2rem;
     transition: margin-left 0.3s ease-in-out;
-    background-color:rgb(41,41,41);
     color:white;
 }
 .main-content.full-width {
