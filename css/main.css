@@ -91,7 +91,7 @@ a.icon-link {
 .lineadivisora {
     width: 100%;
     height: 1px;
-    background-color: #ddd;
+    background-color: white;
     margin-top:1.5rem;
     margin-bottom:1.5rem;
 }
@@ -101,10 +101,10 @@ a.icon-link {
 }
 .loslinks a {
   display: inline-flex;
-  align-items: center; /* vertical center icon + text */
-  gap: 6px; /* space between icon and text */
+  align-items: center; 
+  gap: 6px; 
   text-decoration: none;
-  color: inherit; /* use current text color */
+  color: inherit; 
   border-radius:.5em;
   margin-bottom:1em;
   padding:6px 6px 6px 15px;
@@ -148,21 +148,34 @@ a.icon-link {
 .overlay.show {
     opacity: 1;
     pointer-events: auto;
-} 
+}
+.boton {
+    background-color:#5271FF;
+    font-weight:bold;
+    position:absolute;
+    width:65%;
+    bottom:1em;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius:15px;
+}
+.boton:hover {
+    letter-spacing: 1px;
+}
 @media (max-width: 768px) {
     .sidebar {
-    transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 
     .sidebar.show {
-    transform: translateX(0);
+        transform: translateX(0);
     }
 
     .main-content {
-    margin-left: 0;
+        margin-left: 0;
     }
 
     .toggle-btn {
-    display: block;
+        display: block;
     }
 }
