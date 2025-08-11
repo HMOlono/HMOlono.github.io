@@ -157,7 +157,7 @@ a.icon-link {
     bottom:1em;
     left:50%;
     transform: translate(-50%, -50%);
-    border-radius:15px;
+    border-radius:30px;
 }
 .boton:hover {
     letter-spacing: 1px;
