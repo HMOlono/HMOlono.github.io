@@ -119,6 +119,7 @@ a.icon-link {
     margin-left: 250px;
     transition: margin-left 0.3s ease-in-out;
     color:white;
+    padding-top:5 em;
 }
 .main-content.full-width {
     margin-left: 0;
