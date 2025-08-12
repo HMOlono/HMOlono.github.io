@@ -119,7 +119,7 @@ a.icon-link {
     margin-left: 250px;
     transition: margin-left 0.3s ease-in-out;
     color:white;
-    padding-top:5 em;
+    padding-top:5em;
 }
 .main-content.full-width {
     margin-left: 0;
@@ -162,6 +162,30 @@ a.icon-link {
 }
 .boton:hover {
     letter-spacing: 1px;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(1, 1.1); }
+  50% { transform: scale(1.1, 1); }
+  75% { transform: scale(1, 1.05); }
+}
+.awrapper {
+  position: relative; /* establishes positioning context */
+  display: inline-block;
+  text-align: center;
+}
+.afondo {
+  position: absolute;
+  inset: 0; /* fill wrapper */
+  background: #5271FF; /* solid color or gradient */
+  z-index: 0; /* behind image */
+  animation: gelatine 8s infinite;
+  border-radius: 50%;
+}
+.awrapper img {
+  position: relative;
+  z-index: 1; /* above bg-box */
+  display: block;
 }
 @media (max-width: 768px) {
     .sidebar {
