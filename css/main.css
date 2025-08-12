@@ -1,19 +1,19 @@
 /* Fonts */
 /* jost-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/jost-v19-latin-regular.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v19-latin-regular.woff2') format('woff2'); 
 }
 /* jost-800 - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/jost-v19-latin-800.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/jost-v19-latin-800.woff2') format('woff2'); 
 }
 /* Main CSS */
 body {
@@ -97,23 +97,23 @@ a.icon-link {
     margin-bottom:1.5rem;
 }
 .loslinks {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .loslinks a {
-  display: inline-flex;
-  align-items: center; 
-  gap: 6px; 
-  text-decoration: none;
-  color: inherit; 
-  border-radius:.5em;
-  margin-bottom:1em;
-  padding:6px 6px 6px 15px;
+    display: inline-flex;
+    align-items: center; 
+    gap: 6px; 
+    text-decoration: none;
+    color: inherit; 
+    border-radius:.5em;
+    margin-bottom:1em;
+    padding:6px 6px 6px 15px;
 }
 .loslinks a svg {
-  flex-shrink: 0;
-  width:1em;
-  height:1em;
+    flex-shrink: 0;
+    width:1em;
+    height:1em;
 }
 .main-content {
     margin-left: 250px;
@@ -163,29 +163,52 @@ a.icon-link {
 .boton:hover {
     letter-spacing: 1px;
 }
+.botazul svg, .botgris svg {
+    margin-right: 10px;
+}
+.botazul {
+    background-color:#5271FF;
+    color:white;
+    padding:1em 2em;
+    border-radius:30px;
+    transition: .3s ease
+}
+.botazul:hover {
+    background-color:rgb(79,79,79);
+}
+.botgris {
+    background-color:rgb(79,79,79);
+    color:white;
+    padding:1em 2em;
+    border-radius:30px;
+}
 @keyframes gelatine {
-  from, to { transform: scale(1, 1); }
-  25% { transform: scale(1, 1.1); }
-  50% { transform: scale(1.1, 1); }
-  75% { transform: scale(1, 1.05); }
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(1, 1.1); }
+    50% { transform: scale(1.1, 1); }
+    75% { transform: scale(1, 1.05); }
 }
 .awrapper {
-  position: relative; /* establishes positioning context */
-  display: inline-block;
-  text-align: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top:3em;
+}
+.apadding {
+    padding:.2em;
 }
 .afondo {
-  position: absolute;
-  inset: 0; /* fill wrapper */
-  background: #5271FF; /* solid color or gradient */
-  z-index: 0; /* behind image */
-  animation: gelatine 8s infinite;
-  border-radius: 50%;
+    position: absolute;
+    inset: 0; 
+    background: #5271FF; 
+    z-index: 0; 
+    animation: gelatine 8s infinite;
+    border-radius: 50%;
 }
 .awrapper img {
-  position: relative;
-  z-index: 1; /* above bg-box */
-  display: block;
+    position: relative;
+    z-index: 1; 
+    display: block;
 }
 @media (max-width: 768px) {
     .sidebar {
