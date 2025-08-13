@@ -181,6 +181,7 @@ a.icon-link {
     color:white;
     padding:1em 2em;
     border-radius:30px;
+    margin-left:10px;
 }
 @keyframes gelatine {
     from, to { transform: scale(1, 1); }
@@ -225,4 +226,18 @@ a.icon-link {
     .toggle-btn {
         display: block;
     }
+}
+@media (min-width: 992px) and (max-width: 1151px) {
+  /* Your styles here */
+    .botgris {
+        margin-top:1em;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .sidebar {
+        display: none;
+  }
+  .main-content {
+        margin-left:0;
+  }
 }
