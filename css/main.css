@@ -211,6 +211,22 @@ a.icon-link {
     z-index: 1; 
     display: block;
 }
+.azul {
+    color:#5271FF;
+}
+.numerog {
+    font-size:4em;
+    font-weight:bold;
+}
+.tituloprincipal {
+    font-size:3em;
+    font-weight:bold;
+    border-left:solid 4px #5271FF;
+    padding-left:10px;
+}
+.quehago {
+    border:solid 1px #5271FF;
+}
 @media (max-width: 768px) {
     .sidebar {
         transform: translateX(-100%);
