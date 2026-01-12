@@ -28,7 +28,7 @@ hr {
 }
 /* Parallax Effect */
 .parallax-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/parallax.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../img/parallax.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -38,7 +38,7 @@ hr {
 
 /* Estilo para el botón azul del diseño */
 .btn-primary {
-  background-color: #4f75ff; /* Color similar al de tu imagen */
+  background-color: #5271ff;
   border: none;
   font-weight: 500;
 }
