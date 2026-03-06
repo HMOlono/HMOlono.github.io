@@ -11,8 +11,7 @@ My portfolio highlights my expertise and ongoing training in:
 * **Linux Systems:** Linux Essentials & Red Hat Certified System Administrator (RHCSA).
 * **Cloud Infrastructure:** AWS Certified Solutions Architect (Cloud strategy and design).
 
-## 🛠️ Project Stack
-* **Deployment:** [GitHub Pages]
-* **Content:** Digital CV, interactive certification gallery, and technical skills breakdown.
-
----
+## 🛠️ Project Stack (Active Development)
+* **RHEL 9 Enterprise Lab:** Building and securing a Red Hat environment on Fedora using KVM/QEMU.
+* **Technical Playbook:** A centralized repository of Linux CLI commands and security configurations.
+* **Network Infrastructure Lab:** Simulating enterprise networks to master the CompTIA Network+ objectives.
